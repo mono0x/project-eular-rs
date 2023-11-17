@@ -1,0 +1,18 @@
+{
+  "Frontmatter": {
+    "scope": "rust",
+    "prefix": "problem",
+    "body": [
+      "#[allow(dead_code)]",
+      "fn ${TM_FILENAME_BASE}() -> u64 {",
+      "    0",
+      "}",
+      "",
+      "#[test]",
+      "fn test_${TM_FILENAME_BASE}() {",
+      "    assert_eq!(${TM_FILENAME_BASE}(), 0);",
+      "}",
+      ""
+    ]
+  }
+}
