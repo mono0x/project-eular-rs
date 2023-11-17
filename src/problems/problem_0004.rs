@@ -1,9 +1,5 @@
-fn main() {
-    println!("{}", problem_0004());
-}
-
 // https://projecteuler.net/problem=4
-fn problem_0004() -> u32 {
+pub fn problem_0004() -> u32 {
     let mut max: u32 = 0;
     for i in (100..=999).rev() {
         if i * 999 < max {

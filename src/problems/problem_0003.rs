@@ -1,9 +1,5 @@
-fn main() {
-    println!("{}", problem_0003(600851475143));
-}
-
 // https://projecteuler.net/problem=3
-fn problem_0003(input: u64) -> u64 {
+pub fn problem_0003(input: u64) -> u64 {
     let mut primes: Vec<u64> = Vec::new();
     for i in 2..((input as f64).sqrt()) as u64 {
         if primes.iter().all(|&x| i % x != 0) {

@@ -1,9 +1,5 @@
-fn main() {
-    println!("{}", problem_0002());
-}
-
 // https://projecteuler.net/problem=2
-fn problem_0002() -> u32 {
+pub fn problem_0002() -> u32 {
     let mut a: u32 = 1;
     let mut b: u32 = 2;
     let mut sum: u32 = b;

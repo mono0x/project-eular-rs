@@ -1,9 +1,5 @@
-fn main() {
-    println!("{}", problem_0007());
-}
-
 // https://projecteuler.net/problem=7
-fn problem_0007() -> u32 {
+pub fn problem_0007() -> u32 {
     let mut primes: Vec<u32> = Vec::new();
     for i in 2.. {
         if primes.iter().all(|&x| i % x != 0) {

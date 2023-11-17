@@ -21,12 +21,8 @@ const INPUT: &str = concat!(
     "71636269561882670428252483600823257530420752963450"
 );
 
-fn main() {
-    println!("{}", problem_0008());
-}
-
 // https://projecteuler.net/problem=8
-fn problem_0008() -> u64 {
+pub fn problem_0008() -> u64 {
     let mut max: u64 = 0;
     for i in 0..=INPUT.len() - 13 {
         max = std::cmp::max(

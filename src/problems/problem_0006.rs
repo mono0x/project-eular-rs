@@ -1,9 +1,5 @@
-fn main() {
-    println!("{}", problem_0006());
-}
-
 // https://projecteuler.net/problem=6
-fn problem_0006() -> u32 {
+pub fn problem_0006() -> u32 {
     let mut sum: u32 = 0;
     let mut sum_of_squares: u32 = 0;
     for i in 1..=100 {

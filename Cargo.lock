@@ -3,5 +3,5 @@
 version = 3
 
 [[package]]
-name = "problem_0005"
+name = "project-eular-rs"
 version = "0.1.0"

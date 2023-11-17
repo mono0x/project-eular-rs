@@ -1,9 +1,5 @@
-fn main() {
-    println!("{}", problem_0009());
-}
-
 // https://projecteuler.net/problem=9
-fn problem_0009() -> i64 {
+pub fn problem_0009() -> i64 {
     for a in 1..=333 {
         for b in a..=500 {
             let c = 1000 - a - b;
