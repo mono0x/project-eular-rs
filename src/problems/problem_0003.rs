@@ -1,18 +1,16 @@
 // https://projecteuler.net/problem=3
 #[allow(dead_code)]
-pub fn problem_0003(input: u64) -> u64 {
-    let mut primes: Vec<u64> = Vec::new();
-    for i in 2..((input as f64).sqrt()) as u64 {
-        if primes.iter().all(|&x| i % x != 0) {
-            primes.push(i)
+fn problem_0003(input: u64) -> u64 {
+    let mut n = input;
+    for i in 2.. {
+        if n % i == 0 {
+            n /= i;
+            if n == 1 {
+                return i;
+            }
         }
     }
-    primes
-        .iter()
-        .rev()
-        .find(|&x| input % x == 0)
-        .unwrap()
-        .clone()
+    panic!("must not happen")
 }
 
 #[test]
