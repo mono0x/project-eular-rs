@@ -9,3 +9,4 @@ pub mod problem_0008;
 pub mod problem_0009;
 pub mod problem_0010;
 pub mod problem_0011;
+pub mod problem_0012;
