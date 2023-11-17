@@ -1,4 +1,5 @@
 // https://projecteuler.net/problem=3
+#[allow(dead_code)]
 pub fn problem_0003(input: u64) -> u64 {
     let mut primes: Vec<u64> = Vec::new();
     for i in 2..((input as f64).sqrt()) as u64 {

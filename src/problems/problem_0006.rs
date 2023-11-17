@@ -1,4 +1,5 @@
 // https://projecteuler.net/problem=6
+#[allow(dead_code)]
 pub fn problem_0006() -> u32 {
     let mut sum: u32 = 0;
     let mut sum_of_squares: u32 = 0;

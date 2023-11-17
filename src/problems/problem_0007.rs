@@ -1,4 +1,5 @@
 // https://projecteuler.net/problem=7
+#[allow(dead_code)]
 pub fn problem_0007() -> u32 {
     let mut primes: Vec<u32> = Vec::new();
     for i in 2.. {

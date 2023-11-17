@@ -22,6 +22,7 @@ const INPUT: &str = concat!(
 );
 
 // https://projecteuler.net/problem=8
+#[allow(dead_code)]
 pub fn problem_0008() -> u64 {
     let mut max: u64 = 0;
     for i in 0..=INPUT.len() - 13 {

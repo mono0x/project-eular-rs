@@ -1,4 +1,5 @@
 // https://projecteuler.net/problem=4
+#[allow(dead_code)]
 pub fn problem_0004() -> u32 {
     let mut max: u32 = 0;
     for i in (100..=999).rev() {

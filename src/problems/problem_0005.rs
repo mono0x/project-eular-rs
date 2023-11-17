@@ -1,4 +1,5 @@
 // https://projecteuler.net/problem=5
+#[allow(dead_code)]
 pub fn problem_0005() -> u32 {
     for i in (20..).step_by(20) {
         if (1..=20).all(|x| i % x == 0) {

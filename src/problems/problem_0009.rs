@@ -1,4 +1,5 @@
 // https://projecteuler.net/problem=9
+#[allow(dead_code)]
 pub fn problem_0009() -> i64 {
     for a in 1..=333 {
         for b in a..=500 {

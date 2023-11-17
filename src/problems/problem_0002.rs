@@ -1,4 +1,5 @@
 // https://projecteuler.net/problem=2
+#[allow(dead_code)]
 pub fn problem_0002() -> u32 {
     let mut a: u32 = 1;
     let mut b: u32 = 2;
