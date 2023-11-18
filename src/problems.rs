@@ -22,3 +22,4 @@ pub mod problem_0021;
 pub mod problem_0022;
 pub mod problem_0023;
 pub mod problem_0024;
+pub mod problem_0025;
