@@ -14,6 +14,8 @@ fn problem_0023() -> u64 {
             let sum = abundant_numbers[i] + abundant_numbers[j];
             if sum <= 28123 {
                 abundant_sums[sum as usize] = true;
+            } else {
+                break;
             }
         }
     }
