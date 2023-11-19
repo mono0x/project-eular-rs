@@ -4,10 +4,14 @@ fn problem_0028(n: usize) -> usize {
     let mut result = 1;
     let mut i = 1;
     for step in (2..n).step_by(2) {
-        for _ in 0..4 {
-            i += step;
-            result += i;
-        }
+        /*
+            for _ in 0..4 {
+                i += step;
+                result += i;
+            }
+        */
+        result += 4 * i + (1 + 2 + 3 + 4) * step;
+        i += step * 4;
     }
     result
 }
