@@ -1,35 +1,16 @@
 // https://projecteuler.net/problem=31
 #[allow(dead_code)]
-fn problem_0031(max: u32) -> u32 {
-    static VALUES: [u32; 8] = [1, 2, 5, 10, 20, 50, 100, 200];
+fn problem_0031(max: usize) -> u64 {
+    static VALUES: [usize; 8] = [1, 2, 5, 10, 20, 50, 100, 200];
 
-    fn search(index: usize, max: u32, sum: u32) -> u32 {
-        if sum == max {
-            return 1;
+    let mut dp = vec![0u64; max + 1];
+    dp[0] = 1;
+    for v in VALUES {
+        for i in v..=max {
+            dp[i] += dp[i - v];
         }
-        if index == 8 {
-            return 0;
-        }
-
-        if index == 3 && sum % 10 != 0 {
-            return 0;
-        }
-        if index == 6 && sum % 100 != 0 {
-            return 0;
-        }
-
-        let mut result = 0;
-        for i in 0..=max {
-            let next = sum + i * VALUES[index];
-            if next > max {
-                break;
-            }
-            result += search(index + 1, max, next);
-        }
-        result
     }
-
-    search(0, max, 0)
+    dp[max]
 }
 
 #[test]
